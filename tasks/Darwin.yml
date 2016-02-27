@@ -1,2 +1,4 @@
 ---
 # tasks file for vagrant(On OSX)
+- name: Install Vagrant with Homebrew Cask
+  homebrew_cask: name=vagrant
