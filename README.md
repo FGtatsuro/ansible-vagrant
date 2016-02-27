@@ -3,7 +3,7 @@
 ansible-vagrant
 ====================================
 
-Ansible role for vagrant.
+Ansible role for Vagrant.
 
 Requirements
 ------------
