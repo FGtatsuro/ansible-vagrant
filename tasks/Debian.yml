@@ -1,2 +1,6 @@
 ---
 # tasks file for vagrant(On Debian family)
+- name: Download Vagrant package
+  get_url: url="{{ vagrant_download_url }}" checksum="sha256:{{ vagrant_sha256 }}" dest="/tmp/vagrant.deb"
+- name: Install Vagrant with dpkg
+  apt: deb="/tmp/vagrant.deb"
