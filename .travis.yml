@@ -27,6 +27,17 @@ matrix:
       env:
         - TARGET=container
         - CONNECTION=docker
+    - os: linux
+      dist: trusty
+      language: python
+      python: 2.7
+      addons:
+        apt:
+          packages:
+          - python-pip
+      env:
+        - TARGET=localhost
+        - CONNECTION=local
 
 # This role needs sudo, thus we can't use the new container infrastructure
 # sudo: false
