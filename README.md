@@ -19,8 +19,8 @@ Role Variables
 
 The variables we can use in this role.
 
-- vagrant_download_url: default="https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb"
-- vagrant_sha256: default="ed0e1ae0f35aecd47e0b3dfb486a230984a08ceda3b371486add4d42714a693d"
+- vagrant_download_url: default="https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb"
+- vagrant_sha256: default="d006d6227e049725b64d8ba3967f0c82460a403ff40230515c93134d58723150"
 - vagrant_download_tmppath: default="/tmp/vagrant.deb"
 
 If you want to overwrite values, please check https://www.vagrantup.com/downloads.html.
