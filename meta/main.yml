@@ -8,12 +8,12 @@ galaxy_info:
     - name: Debian
       versions:
         - jessie
-    - name: Darwin
-      versions:
-        - all
     - name: Ubuntu
       versions:
         - trusty
+    - name: MacOSX
+      versions:
+        - all
 
   galaxy_tags:
     - development
