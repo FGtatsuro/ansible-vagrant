@@ -16,8 +16,8 @@ matrix:
         - sudo ln -s /usr/local/bin/pip2 /usr/local/bin/pip
         - sudo pip install -U setuptools
         - sudo pip install ansible
-        - ansible-galaxy install FGtatsuro.python-requirements
-        - ansible-galaxy install FGtatsuro.virtualbox
+        - git clone https://github.com/FGtatsuro/ansible-python-requirements.git roles/FGtatsuro.python-requirements
+        - git clone https://github.com/FGtatsuro/ansible-virtualbox.git roles/FGtatsuro.virtualbox
     - os: linux
       dist: trusty
       language: python
@@ -55,8 +55,8 @@ sudo: required
 install:
   - pip install ansible
   # Resolve dependencies(When target role isn't installed via Ansible Galaxy, auto resolution of dependencies doesn't occur.)
-  - ansible-galaxy install FGtatsuro.python-requirements
-  - ansible-galaxy install FGtatsuro.virtualbox
+  - git clone https://github.com/FGtatsuro/ansible-python-requirements.git roles/FGtatsuro.python-requirements
+  - git clone https://github.com/FGtatsuro/ansible-virtualbox.git roles/FGtatsuro.virtualbox
 
 script:
   # Basic role syntax check
